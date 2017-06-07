@@ -2,7 +2,7 @@ using System;
 using Microsoft.Bot.Builder.FormFlow;
 
 public enum CarOptions { Dining = 1, Events, Friends };
-public enum ColorOptions { Red = 1, White, Blue };
+public enum diningOptions { Red = 1, White, Blue };
 
 // For more information about this template visit http://aka.ms/azurebots-csharp-form
 [Serializable]
@@ -14,8 +14,8 @@ public class BasicForm
     [Prompt("What are you looking to do {||}")]
     public CarOptions Car { get; set; }
 
-    [Prompt("Please select your favorite {&} {||}")]
-    public ColorOptions Color { get; set; }
+    [Prompt("What type of food do you want {&} {||}")]
+    public diningOptions Color { get; set; }
 
     public static IForm<BasicForm> BuildForm()
     {
