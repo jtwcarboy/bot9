@@ -15,7 +15,7 @@ public class BasicForm
     public CarOptions Car { get; set; }
 
     [Prompt("What type of food do you want {&} {||}")]
-    public diningOptions Color { get; set; }
+    public diningOptions dining { get; set; }
 
     public static IForm<BasicForm> BuildForm()
     {
