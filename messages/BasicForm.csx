@@ -2,7 +2,7 @@ using System;
 using Microsoft.Bot.Builder.FormFlow;
 
 public enum CarOptions { Dining = 1, Events, Friends };
-public enum diningOptions { Red = 1, White, Blue };
+public enum diningOptions { Chinese = 1, Mexican, Italian };
 
 // For more information about this template visit http://aka.ms/azurebots-csharp-form
 [Serializable]
